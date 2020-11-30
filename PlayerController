@@ -47,12 +47,12 @@ public class Player : MonoBehaviourPunCallbacks
 
         if (!photonView.IsMine)
         {
-            gameObject.layer = 11;  // Setze gegner treffbar
+            gameObject.layer = 11;  
         }
 
         if (Camera.main)
         {
-            Camera.main.enabled = false; // Wenn Mein Camera aktiv dann deaktiviere
+            Camera.main.enabled = false; 
         }
 
     }
@@ -90,8 +90,8 @@ public class Player : MonoBehaviourPunCallbacks
     }
     void Movement()
     {
-        float x = Input.GetAxisRaw("Horizontal");       //Input X-Achse
-        float z = Input.GetAxisRaw("Vertical");         //Input y-Achse
+        float x = Input.GetAxisRaw("Horizontal");       
+        float z = Input.GetAxisRaw("Vertical");         
             
         Vector3 move = transform.right * x + transform.forward * z;     
 
