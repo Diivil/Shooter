@@ -40,8 +40,8 @@ public class Player : MonoBehaviourPunCallbacks
 
         if (photonView.IsMine)
         {
-            uiHealthbar = GameObject.Find("HUD/Health/Bar").transform;    // HP Bar GameObject
-            RefreshHealthbar();                                           // Setze HP Bar auf Max HP
+            uiHealthbar = GameObject.Find("HUD/Health/Bar").transform;    
+            RefreshHealthbar();                                           
         }
         cameraParent.SetActive(photonView.IsMine);
 
